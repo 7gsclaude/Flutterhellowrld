@@ -32,13 +32,16 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Hellow world '),
-        ),
-        body: const Center(
-          child: Text('Hello Project worlds'),
-        ),
-      ),
+          appBar: AppBar(
+            title: const Text('Hellow world'),
+          ),
+          body: const Center(
+            child: Text('Hello Project worlds', style: TextStyle(fontSize: 35)),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {},
+            child: const Icon(Icons.add),
+          )),
     );
   }
 }
